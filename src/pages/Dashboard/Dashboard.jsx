@@ -1,9 +1,13 @@
+import "./Dashboard.css";
 import { React } from "react";
+import { Link } from "react-router-dom";
 
-const Dashboard = () => {
+const Dashboard = (props) => {
+  let user = props.user;
+
   return (
-    <div>
-      <div></div>
+    <div className="dashboard-container">
+      <Link to="/mines">Mines</Link>
     </div>
   );
 };

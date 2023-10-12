@@ -1,0 +1,8 @@
+.dashboard-container {
+  display: flex;
+  min-height: calc(100vh - 51px);
+  padding: 10px;
+  background-color: grey;
+  justify-content: center;
+  align-items: center;
+}

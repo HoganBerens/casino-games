@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import { logOut } from "../../utilities/users-service";
 import "./NavBar.css";
 
-export default function NavBar({ user, setUser }) {
+export default function NavBar(props) {
+  let user = props.user;
+  let setUser = props.setUser;
+  let userBalance = props.userBalance;
   function handleLogOut() {
     logOut();
     setUser(null);
@@ -11,9 +14,8 @@ export default function NavBar({ user, setUser }) {
   return (
     <nav className="navbar-container">
       <Link to="/">Home</Link>&nbsp; | &nbsp;
-      <Link to="/newEvent">New Event</Link>&nbsp; | &nbsp;
-      <span> Welcome, {user.name} to Shared Calendar!</span>
-      &nbsp; | &nbsp;<Link to="/groups">New Group</Link>
+      <span> Welcome, {user.name} to Casino-Games!</span>
+      &nbsp; | &nbsp;Balance: {userBalance}
       &nbsp; | &nbsp;
       <Link to="" onClick={handleLogOut}>
         Log Out
