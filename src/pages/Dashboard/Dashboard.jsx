@@ -8,6 +8,8 @@ const Dashboard = (props) => {
   return (
     <div className="dashboard-container">
       <Link to="/mines">Mines</Link>
+      &nbsp; | &nbsp;
+      <Link to="/roulette">Roulette</Link>
     </div>
   );
 };

@@ -2,10 +2,10 @@ import React from "react";
 import "./Mines.css";
 import MinesBoard from "./MinesBoard";
 
-const Mines = (props) => {
+const Mines = () => {
   return (
     <div className="mines-container">
-      <MinesBoard userBalance={props.userBalance} setUserBalance={props.setUserBalance} />
+      <MinesBoard />
     </div>
   );
 };
