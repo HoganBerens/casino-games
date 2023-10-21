@@ -16,6 +16,7 @@ const RouletteGameBoard = () => {
     <div className="roulette-game-board-container">
       <div>{rouletteNumber}</div>
       <div>{prevNumbers}</div>
+
       <button onClick={handleRouletteNumber}>New Number</button>
     </div>
   );
